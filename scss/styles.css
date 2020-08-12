@@ -1,0 +1,240 @@
+@font-face {
+  font-family: 'Robotos Lab';
+  src: url("/fonts/robotoslab-variablefont_wght-webfont.woff") format("woff"), url("/fonts/robotoslab-variablefont_wght-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Robotos Lab' !important;
+}
+
+.spinner-grow {
+  animation: fadeInAnimation ease 1s;
+}
+
+#bg-gradient {
+  background: #001242;
+  background: linear-gradient(135deg, #001242 0%, #005e7c 30%, #0094c6 100%);
+  min-height: 710px;
+  min-width: 1110px;
+  border-radius: 15px;
+}
+
+#bg-gradient-search {
+  background: #001242;
+  background: linear-gradient(135deg, #001242 0%, #005e7c 30%, #0094c6 100%);
+  min-height: 710px;
+  min-width: 1110px;
+  border-radius: 15px;
+  padding-top: 315px;
+  padding-left: 315px;
+  padding-right: 315px;
+  animation: fadeInAnimation ease 1s;
+}
+
+#bg-img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+#weather-icon {
+  width: 250px;
+  filter: invert(1);
+  animation: fadeInAnimation ease 1s;
+}
+
+#humidity-icon,
+#wind-icon,
+#precip-icon,
+#time-icon {
+  width: 48px;
+  filter: invert(1);
+  margin-top: -1.5rem;
+}
+
+#left-column {
+  padding-top: 2rem;
+  padding-left: 3rem;
+  animation: fadeInAnimation ease 1s;
+}
+
+#right-column {
+  padding-top: 1.3rem;
+  animation: fadeInAnimation ease 1s;
+}
+
+#wrapper-right-column {
+  background: rgba(83, 171, 201, 0.5);
+  border-radius: 15px;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 524px;
+}
+
+#weather-info {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 3rem;
+}
+
+#temperature {
+  font-size: 10rem;
+  animation: fadeInAnimation ease 1s;
+}
+
+#topbar {
+  background: #040f16;
+  border-radius: 15px 15px 0 0;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#country-title {
+  font-size: 2rem;
+  padding-left: 1rem !important;
+  padding-right: 0rem !important;
+  animation: fadeInAnimation ease 1s;
+}
+
+#city-title {
+  font-size: 2rem;
+  padding-left: 0rem !important;
+  animation: fadeInAnimation ease 1s;
+}
+
+#wrapper-title {
+  margin-top: 15px;
+  margin-left: 5px;
+}
+
+#location-icon {
+  width: 37px;
+  filter: invert(1);
+  margin-top: -1rem;
+  animation: fadeInAnimation ease 1s;
+}
+
+#search-icon {
+  width: 37px;
+  filter: invert(1);
+  margin-top: 1.2rem;
+  transition: 0.3s;
+  animation: fadeInAnimation ease 1s;
+}
+
+#search-icon:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  #bg-gradient {
+    min-width: 930px;
+  }
+  #bg-gradient-search {
+    min-width: 930px;
+    padding-left: 215px;
+    padding-right: 215px;
+  }
+  #wrapper-right-column {
+    height: 530px;
+  }
+  #bg-img {
+    margin-top: 33px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .container {
+    width: 950px;
+  }
+  #bg-gradient {
+    min-width: 330px;
+  }
+  #bg-gradient-search {
+    min-width: 330px;
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+  #search-icon {
+    margin-left: -15px;
+  }
+  #wrapper-right-column {
+    margin-left: 2rem;
+    height: 550px;
+    margin-bottom: 3rem;
+  }
+  #bg-img {
+    margin-top: -14px;
+  }
+  #left-column {
+    padding-right: 3rem;
+  }
+  #city-title {
+    padding-left: 1.5rem !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #wrapper-right-column {
+    height: 500px;
+  }
+  #bg-img {
+    margin-top: -10px;
+  }
+  #search-icon {
+    margin-left: -30px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #bg-img {
+    margin-top: -5px;
+  }
+  #search-icon {
+    margin-top: 17px;
+  }
+  #weather-icon {
+    width: 220px;
+    filter: invert(1);
+    animation: fadeInAnimation ease 1s;
+  }
+  #temperature {
+    font-size: 8rem;
+    animation: fadeInAnimation ease 1s;
+  }
+  #time,
+  #humidity,
+  #wind,
+  #precip {
+    font-size: 2.5rem !important;
+  }
+  #humidity-icon,
+  #wind-icon,
+  #precip-icon,
+  #time-icon {
+    width: 40px;
+  }
+  #weather-info {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+  }
+  #wrapper-right-column {
+    height: 360px;
+    margin-bottom: 5.5rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

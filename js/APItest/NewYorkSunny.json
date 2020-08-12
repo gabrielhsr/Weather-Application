@@ -1,0 +1,41 @@
+{
+    "request": {
+        "type": "City",
+        "query": "New York, United States of America",
+        "language": "en",
+        "unit": "m"
+    },
+    "location": {
+        "name": "New York",
+        "country": "United States of America",
+        "region": "New York",
+        "lat": "40.714",
+        "lon": "-74.006",
+        "timezone_id": "America/New_York",
+        "localtime": "2020-08-11 10:28",
+        "localtime_epoch": 1597141680,
+        "utc_offset": "-4.0"
+    },
+    "current": {
+        "observation_time": "02:28 PM",
+        "temperature": 28,
+        "weather_code": 113,
+        "weather_icons": [
+            "https://assets.weatherstack.com/images/wsymbols01_png_64/wsymbol_0001_sunny.png"
+        ],
+        "weather_descriptions": [
+            "Sunny"
+        ],
+        "wind_speed": 7,
+        "wind_degree": 200,
+        "wind_dir": "SSW",
+        "pressure": 1017,
+        "precip": 0,
+        "humidity": 82,
+        "cloudcover": 0,
+        "feelslike": 30,
+        "uv_index": 7,
+        "visibility": 16,
+        "is_day": "yes"
+    }
+}
