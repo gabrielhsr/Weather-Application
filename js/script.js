@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 					<div class="row text-white" id="topbar">
 						<div class="col-11">
 							<div id="wrapper-title">
-								<img src="/img/icons/map-location.png" id="location-icon"/>
+								<img src="../img/icons/map-location.png" id="location-icon"/>
 								<p class="lead py-3 px-5 d-none d-lg-inline" id="country-title" >${
 									data.location.country
 								} - 
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 							</div>						
 						</div>
 						<div class="col-1">
-							<img src="/img/icons/search.png" id="search-icon" onClick="search();"/>
+							<img src="../img/icons/search.png" id="search-icon" onClick="search();"/>
 							</p>							
 						</div>
 					</div>
@@ -89,25 +89,25 @@ document.addEventListener('DOMContentLoaded', (event) => {
 							<div id="wrapper-right-column">
 								<div id="weather-info">
 									<div id="wrapper-time">									
-										<img src="/img/icons/${isDay()}" id="time-icon" class="mx-3" />
+										<img src="../img/icons/${isDay()}" id="time-icon" class="mx-3" />
 										<p class="display-4 d-inline-block" id="time">${currentDate}</p>
 									</div>
 									<div id="wrapper-humidity">
-										<img src="/img/icons/074-humidity.png" id="humidity-icon" class="mx-3" />
+										<img src="../img/icons/074-humidity.png" id="humidity-icon" class="mx-3" />
 										<p class="display-4 d-inline-block" id="humidity">${data.current.humidity}%</p>
 									</div>
 									<div id="wrapper-wind">
-										<img src="/img/icons/015-wind.png" id="wind-icon" class="mx-3" />
+										<img src="../img/icons/015-wind.png" id="wind-icon" class="mx-3" />
 										<p class="display-4 d-inline-block" id="wind">${
 											data.current.wind_speed
 										} km/h</p>
 									</div>
 									<div id="wrapper-precip">
-										<img src="/img/icons/063-rain-3.png" id="precip-icon" class="mx-3" />
+										<img src="../img/icons/063-rain-3.png" id="precip-icon" class="mx-3" />
 										<p class="display-4 d-inline-block" id="precip">${data.current.precip} mm</p>
 									</div>
 								</div>
-								<img src="/img/clouds.png" id="bg-img"/>
+								<img src="../img/clouds.png" id="bg-img"/>
 							</div>
 						</div>
 					</div>
@@ -117,28 +117,28 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				switch (weatherDescription) {
 					case 'Overcast':
 					case 'Partly cloudy':
-						$('#weather-icon').attr('src', 'img/icons/097-cloud-1.png');
+						$('#weather-icon').attr('src', '../img/icons/097-cloud-1.png');
 						break;
 					case 'Sunny':
 					case 'Clear':
-						$('#weather-icon').attr('src', 'img/icons/045-sun.png');
+						$('#weather-icon').attr('src', '../img/icons/045-sun.png');
 						break;
 					case 'Patchy rain possible':
-						$('#weather-icon').attr('src', 'img/icons/050-sprinkle-2.png');
+						$('#weather-icon').attr('src', '../img/icons/050-sprinkle-2.png');
 						break;
 					case 'Mist':
 					case 'Hazer':
-						$('#weather-icon').attr('src', 'img/icons/075-haze.png');
+						$('#weather-icon').attr('src', '../img/icons/075-haze.png');
 						break;
 					case 'Light Rain With Thunderstorm':
 					case 'Thunderstorm In Vicinity':
-						$('#weather-icon').attr('src', 'img/icons/047-storm-5.png');
+						$('#weather-icon').attr('src', '../img/icons/047-storm-5.png');
 						break;
 					default:
 						if (data.current.is_day === 'yes') {
-							$('#weather-icon').attr('src', 'img/icons/096-cloud-2.png');
+							$('#weather-icon').attr('src', '../img/icons/096-cloud-2.png');
 						} else {
-							$('#weather-icon').attr('src', 'img/icons/092-cloud-6.png');
+							$('#weather-icon').attr('src', '../img/icons/092-cloud-6.png');
 						}
 				}
 			})
