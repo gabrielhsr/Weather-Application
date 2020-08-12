@@ -10,7 +10,7 @@ I created this application in order to put into practice the content I learned i
 ## Technologies Used
 - Bootstrap
 - SASS
-- JavaScript/ jQuery
+- JavaScript / jQuery
 - Weatherstack API
 - VSCode
 
